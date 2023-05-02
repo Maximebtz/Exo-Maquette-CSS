@@ -73,7 +73,7 @@ header figure figcaption span {
 /**********Section 1**********/
 .sec-1 {
   padding: 12em 15% 7em 15%;
-  height: 800px;
+  height: 900px;
 }
 .sec-1 .upper-content {
   display: flex;
@@ -88,6 +88,7 @@ header figure figcaption span {
 }
 .sec-1 .upper-content .left p {
   color: rgb(0, 217, 255);
+  margin-bottom: 25px;
 }
 .sec-1 .upper-content .left h2 {
   font-size: 3em;
@@ -100,18 +101,20 @@ header figure figcaption span {
   max-width: 50%;
   min-width: auto;
   height: auto;
+  color: grey;
+  line-height: 25px;
 }
 .sec-1 .lower-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 6.5em;
+  margin-top: 10em;
 }
 .sec-1 .lower-content .part {
   max-width: 20em;
   text-align: justify;
 }
 .sec-1 .lower-content .part span {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #0019fd;
   font-weight: 600;
 }
@@ -170,13 +173,14 @@ header figure figcaption span {
   align-items: center;
   justify-content: center;
   background-color: rgb(231, 231, 231);
+  padding: 12rem;
 }
 .sec-3 .upper-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 12rem 0 10rem 0;
+  padding: 0 0 10rem 0;
 }
 .sec-3 .upper-content p {
   font-weight: 500;
@@ -201,10 +205,23 @@ header figure figcaption span {
 }
 .sec-3 .lower-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.sec-3 .lower-content figure {
+  display: flex;
+  flex-direction: column;
+}
+.sec-3 .lower-content figure img {
+  width: auto;
+  height: auto;
 }
 .sec-3 .lower-content .id-mate {
-  margin: 0 20px;
+  margin: 0 50px;
+  padding: 15px;
   background-color: ghostwhite;
+  transition: all 0.5s ease-in-out;
 }
 .sec-3 .lower-content .id-mate figcaption {
   display: flex;
@@ -224,6 +241,7 @@ header figure figcaption span {
   display: flex;
   justify-content: space-between;
   margin: 0 20px 15px 20px;
+  color: rgb(110, 110, 110);
 }
 .sec-3 .lower-content .id-mate .progress {
   display: flex;
@@ -232,7 +250,10 @@ header figure figcaption span {
   height: 10px;
   border-radius: 5px;
   margin: 0 20px 15px 20px;
-  background-color: gray;
+  background-color: rgb(220, 220, 220);
+}
+.sec-3 .lower-content .id-mate .progress .css2 {
+  width: 200px;
 }
 .sec-3 .lower-content .id-mate .progress span {
   position: absolute;
@@ -242,4 +263,77 @@ header figure figcaption span {
   height: 10px;
   border-radius: 5px;
   background: linear-gradient(90deg, #AE34C1 0%, #9434C1 14.58%, #5134C1 51.56%, #0DB2E6 84.37%);
+}
+.sec-3 .lower-content .id-mate:hover {
+  transform: scale(1.07);
+}
+
+/**********Section 4**********/
+.sec-4 {
+  width: auto;
+  height: 1850px;
+  padding: 12em 20% 7em 20%;
+}
+.sec-4 .upper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec-4 .upper-content .left {
+  max-width: 50%;
+  min-width: 25%;
+  width: 100%;
+  height: 100%;
+}
+.sec-4 .upper-content .left p {
+  color: rgb(0, 217, 255);
+  margin-bottom: 25px;
+}
+.sec-4 .upper-content .left h2 {
+  font-size: 3.5em;
+  min-width: 5em;
+  max-width: 10em;
+  width: auto;
+}
+.sec-4 .upper-content .right {
+  text-align: justify;
+  max-width: 50%;
+  min-width: auto;
+  height: auto;
+  line-height: 30px;
+  font-size: larger;
+  color: grey;
+}
+.sec-4 .lower-content {
+  padding: 10em 0;
+}
+.sec-4 .lower-content a {
+  text-decoration: none;
+  color: grey;
+}
+.sec-4 .lower-content a span {
+  color: #0019fd;
+}
+.sec-4 .lower-content .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.sec-4 .lower-content .img .case1 {
+  height: 534px;
+  display: flex;
+  overflow: hidden;
+}
+.sec-4 .lower-content .img .case1 .two {
+  display: flex;
+  flex-direction: column;
+  height: 267px;
+}
+.sec-4 .lower-content .img .case1 .three {
+  display: flex;
+}
+.sec-4 .lower-content .img .case1 .six {
+  height: 282px;
 }/*# sourceMappingURL=Styles.css.map */
