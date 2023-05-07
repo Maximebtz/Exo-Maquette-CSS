@@ -6,15 +6,15 @@
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
+.lower-content::-webkit-scrollbar {
   width: 7px;
 }
 
-body::-webkit-scrollbar-track {
+.lower-content::-webkit-scrollbar-track {
   background: rgba(217, 217, 217, 0.778);
 }
 
-body::-webkit-scrollbar-thumb {
+.lower-content::-webkit-scrollbar-thumb {
   background-color: rgb(14, 0, 214);
   border-radius: 20px;
 }
@@ -36,7 +36,7 @@ header nav {
 header nav h1 {
   display: flex;
   align-items: center;
-  margin-left: 3em;
+  margin-left: 5%;
   font-weight: 400;
   color: ghostwhite;
 }
@@ -114,7 +114,6 @@ header figure figcaption span {
   text-align: justify;
   max-width: 50%;
   min-width: 300px;
-  margin-left: 40px;
   height: auto;
   color: grey;
   line-height: 25px;
@@ -274,7 +273,6 @@ header figure figcaption span {
   width: 200px;
 }
 .sec-3 .lower-content .id-mate .progress span {
-  position: absolute;
   display: flex;
   align-items: center;
   width: 250px;
@@ -363,11 +361,11 @@ header figure figcaption span {
   background-color: rgb(250, 250, 250);
 }
 .sec-5 .sec5-content {
+  padding: 10rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10rem 0;
 }
 .sec-5 .sec5-content .art-cont {
   display: flex;
@@ -490,4 +488,207 @@ footer .center {
 footer .icons i {
   margin: 0 20px 20px 20px;
   font-size: 25px;
+}
+
+/********************Responsive********************/
+@media only screen and (max-width: 500px) {
+  /**********Header**********/
+  header nav #myLinks {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    margin: 0;
+    background-color: red;
+    width: 100%;
+    padding: 40px 0;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(10px) brightness(60%);
+            backdrop-filter: blur(10px) brightness(60%);
+    border-radius: 0 0 10px 10px;
+    border-bottom: rgba(0, 0, 0, 0.5) solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 30px 3px;
+  }
+  header nav #myLinks li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    text-decoration: underline;
+    line-height: 50px;
+    color: rgba(248, 248, 255, 0.503);
+  }
+  header nav .icon {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-right: 5%;
+    color: ghostwhite;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  header figure figcaption {
+    font-size: 250%;
+  }
+  /**********Section 1**********/
+  .sec-1 .upper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sec-1 .upper-content .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-1 .upper-content .left p {
+    color: rgb(0, 217, 255);
+    margin-bottom: 25px;
+  }
+  .sec-1 .upper-content .left h2 {
+    font-size: 2.5em;
+    min-width: 8em;
+    max-width: 15em;
+    width: 100%;
+  }
+  .sec-1 .upper-content .right {
+    padding-top: 20px;
+  }
+  .sec-1 .lower-content {
+    overflow-x: scroll;
+  }
+  .sec-1 .lower-content::-webkit-scrollbar {
+    height: 5px;
+  }
+  .sec-1 .lower-content::-webkit-scrollbar-track {
+    background: rgba(217, 217, 217, 0.778);
+  }
+  .sec-1 .lower-content::-webkit-scrollbar-thumb {
+    background-color: rgb(14, 0, 214);
+    border-radius: 20px;
+  }
+  /**********Section 2**********/
+  .sec-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sec-2 .sec2-content {
+    padding: 0 10%;
+  }
+  .sec-2 .sec2-content h2 {
+    margin: 10px 0;
+  }
+  /**********Section 3**********/
+  .sec-3 {
+    text-align: center;
+    padding: 0 0 50px 0;
+  }
+  .sec-3 .upper-content {
+    padding: 50px;
+  }
+  .sec-3 .lower-content {
+    display: flex;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+  .sec-3 .lower-content .id-mate {
+    margin: 9%;
+  }
+  .sec-3 .lower-content::-webkit-scrollbar {
+    height: 5px;
+  }
+  .sec-3 .lower-content::-webkit-scrollbar-track {
+    background: rgba(217, 217, 217, 0.778);
+  }
+  .sec-3 .lower-content::-webkit-scrollbar-thumb {
+    background-color: rgb(14, 0, 214);
+    border-radius: 20px;
+  }
+  /**********Section 4**********/
+  .sec-4 {
+    padding: 5%;
+    height: 100%;
+  }
+  .sec-4 .upper-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sec-4 .upper-content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 50px 0;
+  }
+  .sec-4 .upper-content .right {
+    max-width: 80%;
+  }
+  .sec-4 .lower-content {
+    padding: 100px 0 0 0;
+  }
+  .sec-4 .lower-content .img {
+    overflow-x: scroll;
+    transform: scale(1);
+    width: 100%;
+    padding: 25px 0;
+  }
+  .sec-4 .lower-content .img .case1 {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+  }
+  /**********Section 5**********/
+  .sec-5 {
+    padding: 0;
+    height: 100%;
+  }
+  .sec-5 .sec5-content {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-5 .sec5-content img {
+    width: 100%;
+  }
+  .sec-5 .sec5-content .art-cont {
+    margin: 0 25px;
+    text-align: center;
+    max-width: 80%;
+  }
+  .sec-5 .sec5-content .art-cont button {
+    width: 100%;
+  }
+  .sec-5 .sec5-content:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  /**********Section 6**********/
+  .sec-6 {
+    display: block;
+  }
+  .sec-6 .left-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .sec-6 .left-content figure {
+    max-height: 450px;
+  }
+  .sec-6 .right-content {
+    height: 250px;
+  }
+  /**********Footer**********/
+  h2 {
+    display: none;
+  }
 }/*# sourceMappingURL=Styles.css.map */
